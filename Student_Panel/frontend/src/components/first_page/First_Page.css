@@ -1,0 +1,36 @@
+
+
+.link-hover {
+  position: relative;
+  text-decoration: none;
+  color: inherit; /* Maintain the original color */
+}
+
+.link-hover::before,
+.link-hover::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px; /* Position the underline a bit below the text */
+  background-color: currentColor; /* Use the current text color */
+  transition: width 0.3s ease, left 0.3s ease, right 0.3s ease;
+}
+
+.link-hover::before {
+  left: 50%;
+}
+
+.link-hover::after {
+  right: 50%;
+}
+
+.link-hover:hover::before {
+  width: 50%;
+  left: 0;
+}
+
+.link-hover:hover::after {
+  width: 50%;
+  right: 0;
+}

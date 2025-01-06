@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    height: 100%; /* Ensure the body takes up the full height */
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative; /* For absolute positioning of waves */
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1; /* Ensure the form is above the wave */
+  }
+  
+  .form-header {
+    margin-bottom: 20px;
+  }
+  
+  .form-logo {
+    height: 150px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .account-form {
+    width: 100%;
+    max-width: 600px;
+    z-index: 2; /* Ensure form elements are above the wave */
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input, .form-group select{
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .date-picker-wrapper {
+    width: 48%; /* Match the width of other input fields */
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: #333; /* Slightly lighter black */
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+  
+  a {
+    color: #ff5500;
+    text-decoration: none;
+  }
+  
+  .side-waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0; /* Ensure the wave is behind all other elements */
+  }
+  
+  @media (max-width: 768px) {
+    .form-group {
+      flex-direction: column;
+    }
+  
+    .form-group input, .form-group select, .form-group .date-picker-wrapper {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .form-group input:last-child, .form-group select:last-child, .form-group .date-picker-wrapper:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

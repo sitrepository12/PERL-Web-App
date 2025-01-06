@@ -1,0 +1,13 @@
+/* HireMeeTest.css */
+.scroll-container {
+    max-width: 100%; /* Adjust this value according to your layout */
+    overflow-x: auto;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent wrapping of content */
+  }
+  
+  .container {
+    max-height: calc(100vh - 200px); /* Adjust this value according to your layout */
+    overflow-y: auto;
+  }
+  

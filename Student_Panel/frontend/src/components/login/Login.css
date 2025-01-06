@@ -1,0 +1,16 @@
+/* App.css */
+.wave {
+    background: linear-gradient(to bottom, transparent 50%, rgba(255, 255, 255, 0.5) 50%);
+    background-size: 100% 200%;
+    animation: wave 5s infinite linear;
+  }
+  
+  @keyframes wave {
+    0% {
+      background-position: 100% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
